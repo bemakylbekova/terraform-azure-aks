@@ -1,0 +1,15 @@
+module "aks" {
+        source = "bemakylbekova/aks/azure"
+        cluster_name = "example-aks1"
+        kubernetes_version = "1.18.10"
+        node_pool_name = "node1"
+        min_count = "1"
+        max_count = "1"
+        client_id = "bb1e3e99-daa4-4b66-92a7-c4892243c74e"
+        client_secret = "U-1bSDyrrS9N99dlQdo8mKlj46zcHH1FmI"
+        environment = "dev"
+        resource_group_name_location = "West Europe"
+        resource_group_name = "dev"
+        username = "centos"
+        vm_size = "Standard_A2_v2"
+}
